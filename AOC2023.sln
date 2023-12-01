@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AOC2023Day1", "Day1\AOC2023Day1.csproj", "{3B8244A5-AD78-43B0-BF3A-CCC88EBD947F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Commons", "Commons\Commons.csproj", "{DE9D1F43-12A0-4B74-B631-E65B687AEB39}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AOC2023TestProject", "Tests\AOC2023TestProject.csproj", "{D3B13418-6C7C-4095-A692-F5E680B09641}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B8244A5-AD78-43B0-BF3A-CCC88EBD947F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B8244A5-AD78-43B0-BF3A-CCC88EBD947F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B8244A5-AD78-43B0-BF3A-CCC88EBD947F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B8244A5-AD78-43B0-BF3A-CCC88EBD947F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE9D1F43-12A0-4B74-B631-E65B687AEB39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE9D1F43-12A0-4B74-B631-E65B687AEB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE9D1F43-12A0-4B74-B631-E65B687AEB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE9D1F43-12A0-4B74-B631-E65B687AEB39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3B13418-6C7C-4095-A692-F5E680B09641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B13418-6C7C-4095-A692-F5E680B09641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B13418-6C7C-4095-A692-F5E680B09641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B13418-6C7C-4095-A692-F5E680B09641}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76C4721E-5F42-463A-BBCD-DD6C24610C0C}
+	EndGlobalSection
+EndGlobal
