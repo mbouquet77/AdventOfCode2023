@@ -8,11 +8,10 @@ public class Program
         var aocFile = new AocFiles();
         var lines = aocFile.GetLinesFromFile();
 
-        var calib = new Calibration();
-        var res = calib.GetCalibrationSumPart1(lines);
+        var res = Calibration.GetCalibrationSumPart1(lines);
         Console.WriteLine($"star1={res}");
 
-        var res2 = calib.GetCalibrationSumPart2(lines);
+        var res2 = Calibration.GetCalibrationSumPart2(lines);
         Console.WriteLine($"star2={res2}");
     }
 }

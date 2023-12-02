@@ -5,8 +5,6 @@ namespace AOC2023TestProject
 {
     public class CubeBagTest
     {
-        private readonly CubeBag _cubeBag = new CubeBag();
-
         private readonly List<string> _lines =
             [
                 "Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green",
@@ -19,7 +17,7 @@ namespace AOC2023TestProject
         [Fact]
         public void GetPossibleGamesIdsSumPart1Test()
         {
-            Check.That(_cubeBag.GetPossibleGamesIdsSumPart1(_lines)).IsEqualTo(8);
+            Check.That(CubeBag.GetPossibleGamesIdsSumPart1(_lines)).IsEqualTo(8);
         }
 
         [Theory]
@@ -30,7 +28,7 @@ namespace AOC2023TestProject
         [InlineData(["Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green", 5, true])]
         public void IsGamePossible(string line, int gameId, bool result)
         {
-            Check.That(_cubeBag.IsGamePossible(line, out int gameIdResult)).IsEqualTo(result);
+            Check.That(CubeBag.IsGamePossible(line, out int gameIdResult)).IsEqualTo(result);
             Check.That(gameId).IsEqualTo(gameIdResult);
         }
 

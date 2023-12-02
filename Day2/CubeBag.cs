@@ -1,12 +1,8 @@
 ﻿namespace AOC2023Day2
 {
-    public class CubeBag
+    public static class CubeBag
     {
-        private readonly int _blueCubesNumber = 14;
-        private readonly int _redCubesNumber = 12;
-        private readonly int _greenCubesNumber = 13;
-
-        public int GetPossibleGamesIdsSumPart1(List<string> lines)
+        public static int GetPossibleGamesIdsSumPart1(List<string> lines)
         {
             var sum = 0;
             foreach (var line in lines)
@@ -17,8 +13,12 @@
             return sum;
         }
 
-        public bool IsGamePossible(string line, out int gameId)
+        public static bool IsGamePossible(string line, out int gameId)
         {
+            var blueCubesNumber = 14;
+            var redCubesNumber = 12;
+            var greenCubesNumber = 13;
+
             var firstSplit = line.Split(':');
             var gameIdstring = firstSplit[0];
             var gameDetailsString = firstSplit[1];
@@ -36,13 +36,13 @@
                     switch (color)
                     {
                         case "blue":
-                            if (number > _blueCubesNumber) return false;
+                            if (number > blueCubesNumber) return false;
                             break;
                         case "red":
-                            if (number > _redCubesNumber) return false; ;
+                            if (number > redCubesNumber) return false; ;
                             break;
                         case "green":
-                            if (number > _greenCubesNumber) return false; ;
+                            if (number > greenCubesNumber) return false; ;
                             break;
                     }
                 }

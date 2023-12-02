@@ -1,9 +1,8 @@
-﻿
-namespace AOC2023Day1
+﻿namespace AOC2023Day1
 {
-    public class Calibration
+    public static class Calibration
     {
-        public readonly Dictionary<string, int> numberDictionary = new Dictionary<string, int>
+        public static readonly Dictionary<string, int> _numberDictionary = new Dictionary<string, int>
         {
             {"one", 1 },
             {"two", 2 },
@@ -16,9 +15,9 @@ namespace AOC2023Day1
             {"nine", 9 }
         };
 
-        public int GetFirstNumberPart2(string line)
+        public static int GetFirstNumberPart2(string line)
         {
-            foreach (var tuple in numberDictionary)
+            foreach (var tuple in _numberDictionary)
             {
                 if (line.StartsWith(tuple.Key))
                 {
@@ -37,9 +36,9 @@ namespace AOC2023Day1
             return newResult;
         }
 
-        public int GetLastNumberPart2(string line)
+        public static int GetLastNumberPart2(string line)
         {
-            foreach (var tuple in numberDictionary)
+            foreach (var tuple in _numberDictionary)
             {
                 if (line.EndsWith(tuple.Key))
                 {
@@ -58,15 +57,14 @@ namespace AOC2023Day1
             return newResult;
         }
 
-        public int GetCalibrationPart2(string line)
+        public static int GetCalibrationPart2(string line)
         {
             var firstDigit = GetFirstNumberPart2(line);
             var LastDigit = GetLastNumberPart2(line);
             return firstDigit * 10 + LastDigit;
         }
 
-
-        public int GetCalibrationSumPart2(List<string> lines)
+        public static int GetCalibrationSumPart2(List<string> lines)
         {
             var sum = 0;
             foreach (var line in lines)
@@ -76,7 +74,7 @@ namespace AOC2023Day1
             return sum;
         }
 
-        public int GetCalibrationPart1(string line)
+        public static int GetCalibrationPart1(string line)
         {
             var numbers = GetNumbersPart1(line);
             var firstDigit = numbers.FirstOrDefault();
@@ -84,7 +82,7 @@ namespace AOC2023Day1
             return firstDigit * 10 + LastDigit;
         }
 
-        public int GetCalibrationSumPart1(List<string> lines)
+        public static int GetCalibrationSumPart1(List<string> lines)
         {
             var sum = 0;
             foreach (var line in lines)
@@ -94,7 +92,7 @@ namespace AOC2023Day1
             return sum;
         }
 
-        public List<int> GetNumbersPart1(string line)
+        public static List<int> GetNumbersPart1(string line)
         {
             var numbers = new List<int>();
             foreach (char c in line)

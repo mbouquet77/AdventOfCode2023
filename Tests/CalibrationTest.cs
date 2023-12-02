@@ -5,20 +5,13 @@ namespace AOC2023TestProject
 {
     public class CalibrationTest
     {
-        private readonly Calibration _calib;
-
-        public CalibrationTest()
-        {
-            _calib = new Calibration();
-        }
-
         [Fact]
         public void GetNumbersPart1Test()
         {
-            Check.That(_calib.GetNumbersPart1("1abc2")).IsEqualTo(new List<int> { 1, 2 });
-            Check.That(_calib.GetNumbersPart1("pqr3stu8vwx")).IsEqualTo(new List<int> { 3, 8 });
-            Check.That(_calib.GetNumbersPart1("a1b2c3d4e5f")).IsEqualTo(new List<int> { 1, 2, 3, 4, 5 });
-            Check.That(_calib.GetNumbersPart1("treb7uchet")).IsEqualTo(new List<int> { 7 });
+            Check.That(Calibration.GetNumbersPart1("1abc2")).IsEqualTo(new List<int> { 1, 2 });
+            Check.That(Calibration.GetNumbersPart1("pqr3stu8vwx")).IsEqualTo(new List<int> { 3, 8 });
+            Check.That(Calibration.GetNumbersPart1("a1b2c3d4e5f")).IsEqualTo(new List<int> { 1, 2, 3, 4, 5 });
+            Check.That(Calibration.GetNumbersPart1("treb7uchet")).IsEqualTo(new List<int> { 7 });
         }
 
         [Theory]
@@ -28,7 +21,7 @@ namespace AOC2023TestProject
         [InlineData(["treb7uchet", 77])]
         public void GetCalibrationPart1Test(string line, int result)
         {
-            Check.That(_calib.GetCalibrationPart1(line)).IsEqualTo(result);
+            Check.That(Calibration.GetCalibrationPart1(line)).IsEqualTo(result);
         }
 
         [Fact]
@@ -41,7 +34,7 @@ namespace AOC2023TestProject
                 "a1b2c3d4e5f",
                 "treb7uchet"
             };
-            Check.That(_calib.GetCalibrationSumPart1(lines)).IsEqualTo(142);
+            Check.That(Calibration.GetCalibrationSumPart1(lines)).IsEqualTo(142);
         }
 
         [Theory]
@@ -54,7 +47,7 @@ namespace AOC2023TestProject
         [InlineData(["7pqrstsixteen", 7])]
         public void GetFirstNumberPart2Test(string line, int result)
         {
-            Check.That(_calib.GetFirstNumberPart2(line)).IsEqualTo(result);
+            Check.That(Calibration.GetFirstNumberPart2(line)).IsEqualTo(result);
         }
 
         [Theory]
@@ -67,7 +60,7 @@ namespace AOC2023TestProject
         [InlineData(["eighthree", 3])]
         public void GetLastNumberTest(string line, int result)
         {
-            Check.That(_calib.GetLastNumberPart2(line)).IsEqualTo(result);
+            Check.That(Calibration.GetLastNumberPart2(line)).IsEqualTo(result);
         }
 
         [Fact]
@@ -83,7 +76,7 @@ namespace AOC2023TestProject
                 "zoneight234",
                 "7pqrstsixteen"
             };
-            Check.That(_calib.GetCalibrationSumPart2(lines)).IsEqualTo(281);
+            Check.That(Calibration.GetCalibrationSumPart2(lines)).IsEqualTo(281);
         }
     }
 }
