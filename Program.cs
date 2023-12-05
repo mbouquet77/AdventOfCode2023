@@ -1,0 +1,39 @@
+﻿using AOC2023;
+using AOC2023Files;
+
+var aocFile = new AocFiles();
+var day = "Day1";
+var lines = aocFile.GetLinesFromFile(day);
+
+var res = Calibration.GetCalibrationSumPart1(lines);
+Console.WriteLine($"{day} star1={res}");
+
+res = Calibration.GetCalibrationSumPart2(lines);
+Console.WriteLine($"{day} star2={res}");
+
+Console.WriteLine("-------------------------------");
+day = "Day2";
+lines = aocFile.GetLinesFromFile(day);
+
+res = CubeBag.GetPossibleGamesIdsSumPart1(lines);
+Console.WriteLine($"{day} star1={res}");
+
+res = CubeBag.GetMinimumCubeSetsPowerSumPart2(lines);
+Console.WriteLine($"{day} star2={res}");
+
+Console.WriteLine("-------------------------------");
+/*day = "Day3";
+lines = aocFile.GetLinesFromFile(day);
+
+res = Engine.GetEnginePartsNumbersSumPart1(lines);
+Console.WriteLine($"{day} star1={res}");*/
+
+Console.WriteLine("-------------------------------");
+day = "Day4";
+lines = aocFile.GetLinesFromFile(day);
+
+res = Scratchcard.GetWinningNumbersSum(lines);
+Console.WriteLine($"{day} star1={res}");
+
+res = Scratchcard.GetScratchcardTotal(lines);
+Console.WriteLine($"{day} star2={res}");

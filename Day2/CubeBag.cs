@@ -1,5 +1,5 @@
-﻿namespace AOC2023Day2
-{
+﻿namespace AOC2023
+{ 
     public static class CubeBag
     {
         public static int GetPossibleGamesIdsSumPart1(List<string> lines)

@@ -1,4 +1,4 @@
-﻿namespace AOC2023Day4
+﻿namespace AOC2023
 {
     public static class Scratchcard
     {

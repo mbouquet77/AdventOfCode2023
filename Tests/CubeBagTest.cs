@@ -1,4 +1,4 @@
-﻿using AOC2023Day2;
+﻿using AOC2023;
 using NFluent;
 
 namespace AOC2023TestProject

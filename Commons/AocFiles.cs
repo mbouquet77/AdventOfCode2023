@@ -1,11 +1,10 @@
-﻿
-namespace AOC2023
+﻿namespace AOC2023Files
 {
     public class AocFiles
     {
-        public List<string> GetLinesFromFile()
+        public List<string> GetLinesFromFile(string directory)
         {
-            return File.ReadAllLines(@"..\..\..\input.txt").ToList();
+            return File.ReadAllLines(@$"..\..\..\{directory}\input.txt").ToList();
         }
     }
 }

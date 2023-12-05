@@ -1,4 +1,4 @@
-﻿namespace AOC2023Day1
+﻿namespace AOC2023
 {
     public static class Calibration
     {
