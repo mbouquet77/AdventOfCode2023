@@ -1,5 +1,6 @@
 ﻿using AOC2023;
 using AOC2023Files;
+using AOC2023Main;
 
 var aocFile = new AocFiles();
 var day = "Day1";
@@ -37,3 +38,12 @@ Console.WriteLine($"{day} star1={res}");
 
 res = Scratchcard.GetScratchcardTotal(lines);
 Console.WriteLine($"{day} star2={res}");
+
+Console.WriteLine("-------------------------------");
+day = "Day5";
+lines = aocFile.GetLinesFromFile(day);
+
+var res2 = FoodProduction.GetLowestLocationNumberPart1(lines);
+Console.WriteLine($"{day} star1={res2}");
+//var res2 = FoodProduction.GetLowestLocationNumberPart2(lines);
+//Console.WriteLine($"{day} star2={res2}");
